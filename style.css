@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: grey;
+}
+.cantrol{
+    background: white;
+    max-width: 600px;
+    border-radius: 3%;
+    margin: 25px auto;
+    box-shadow: 4px 3px 5px black;
+}
+.head{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.head h4{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin: 0 20px;
+    grid-gap: 20px;
+}
+input, select, textarea{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+.button button{
+    background: #C3B1E1;
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    margin-right: 70px;
+}
+button:active{     
+    background-color:transparent;
+    border: 1px solid black;  
+}
+.base{
+    margin-top: 20px;
+    visibility: hidden;
+}
+  
+@media(max-width:440px){
+    .head{
+        font-size: 10px;
+    }
+    .head h4{
+        font-size: 15px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+}
